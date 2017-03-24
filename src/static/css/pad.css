@@ -23,6 +23,11 @@ iframe {
   display: none;
 }
 
+#innerdocbody {
+  font-size:18px;
+  line-height:auto;
+  padding-top:16px !important;
+}
 #users {
   background: #f7f7f7;
   background: -webkit-linear-gradient( #F7F7F7,#EEE);
@@ -45,7 +50,7 @@ a img {
 }
 /* menu */
 .toolbar {
-  background: #f7f7f7;
+  background: white;
   background: -webkit-linear-gradient(#f7f7f7, #f1f1f1 80%);
   background: -moz-linear-gradient(#f7f7f7, #f1f1f1 80%);
   background: -o-linear-gradient(#f7f7f7, #f1f1f1 80%);
@@ -206,7 +211,11 @@ li[data-key=showusers] > a #online_count {
   padding-left: 2px;
 }
 #editbar{
-  display:none;
+  display: block;
+  height: 33px;
+  background: none;
+  border: none;
+  padding-top: 10px;
 }
 
 #editorcontainer {
