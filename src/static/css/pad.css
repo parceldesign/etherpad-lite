@@ -25,21 +25,16 @@ iframe {
 
 #innerdocbody {
   font-size:18px;
-  line-height:auto;
+  line-height:24px;
   padding-top:16px !important;
 }
 #users {
-  background: #f7f7f7;
-  background: -webkit-linear-gradient( #F7F7F7,#EEE);
-  background: -moz-linear-gradient( #F7F7F7,#EEE);
-  background: -ms-linear-gradient( #F7F7F7,#EEE);
-  background: -o-linear-gradient( #F7F7F7,#EEE);
-  background: linear-gradient( #F7F7F7,#EEE);
-  width: 160px;
+  background: white;
+  width: 300px;
   color: #fff;
   padding: 5px;
-  border-radius: 0 0 6px 6px;
-  border: 1px solid #ccc;
+  border:2px solid black;
+  margin-top:15px;
 }
 #otherusers {
   max-height: 400px;
@@ -109,22 +104,12 @@ a img {
 }
 .toolbar ul li .activeButton {
   background: #eee;
-  background: -webkit-linear-gradient(#ddd, #fff);
-  background: -moz-linear-gradient(#ddd, #fff);
-  background: -o-linear-gradient(#ddd, #fff);
-  background: -ms-linear-gradient(#ddd, #fff);
-  background: linear-gradient(#ddd, #fff);
   -webkit-box-shadow: 0 0 8px rgba(0,0,0,.1) inset;
   -moz-box-shadow: 0 0 8px rgba(0,0,0,.1) inset;
   box-shadow: 0 0 8px rgba(0,0,0,.1) inset;
 }
 .toolbar ul li a {
   background: #fff;
-  background: -webkit-linear-gradient(#fff, #f0f0f0);
-  background: -moz-linear-gradient(#fff, #f0f0f0);
-  background: -o-linear-gradient(#fff, #f0f0f0);
-  background: -ms-linear-gradient(#fff, #f0f0f0);
-  background: linear-gradient(#fff, #f0f0f0);
   border: 1px solid #ccc;
   border-radius: 3px;
   color: #ccc;
@@ -330,9 +315,10 @@ li[data-key=showusers] > a #online_count {
   top: 5px;
   width: 24px;
   height: 24px;
-  border: 1px solid #000;
+  border-radius:24px;
   background: transparent;
   cursor: pointer;
+  overflow: hidden;
 }
 #myswatch {
   width: 100%;
@@ -406,7 +392,7 @@ li[data-key=showusers] > a #online_count {
   height: 18px;
   margin: 0;
   border: 0;
-  width: 122px;
+  width: 260px;
   background: transparent;
 }
 #myusernameform input.editable {
@@ -445,7 +431,8 @@ li[data-key=showusers] > a #online_count {
   color: #333
 }
 #myswatchbox, #myusernameedit, #otheruserstable .swatch {
-  border: 1px solid #ccc !important;
+  border: none;
+  pointer-events:none; /* Prevents Changing the Value */
   color: #333;
 }
 table#otheruserstable {
