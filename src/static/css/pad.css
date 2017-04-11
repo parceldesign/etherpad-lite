@@ -27,6 +27,10 @@ iframe {
   font-size:18px;
   line-height:24px;
   padding-top:16px !important;
+  width: 50%;
+  margin: 0 auto;
+  min-width: 500px;
+  max-width: 700px;
 }
 #users {
   background: white;
