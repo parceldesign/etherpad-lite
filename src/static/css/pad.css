@@ -65,12 +65,12 @@ a img {
   padding-left: 1px;
   z-index: 2;
   overflow: hidden;
-  float: left
+  float: left;
+  text-align: center;
 }
 .toolbar ul li {
-  float: left;
-  margin-left: 2px;
   height:32px;
+  display: inline-block;
 }
 .toolbar ul li.separator {
   border: inherit;
@@ -110,8 +110,8 @@ a img {
 }
 .toolbar ul li a {
   background: #fff;
-  border: 1px solid #ccc;
-  border-radius: 3px;
+  border: 1px solid #efefef;
+  border-radius: 0px;
   color: #ccc;
   cursor: pointer;
   display: inline-block;
@@ -127,12 +127,11 @@ a img {
   top: 1px;
 }
 .toolbar ul li a .buttontext {
-  color: #666;
-  font-size: 14px;
+  font-size: 17px;
   border:none;
   background:none;
   margin-top:1px;
-  color:#666;
+  color:black;
 }
 
 .buttontext::-moz-focus-inner {
@@ -544,15 +543,17 @@ table#otheruserstable {
   width: 180px;
   height: 200px;
   z-index: 400;
-  background-color: #f7f7f7;
-  border-left: 1px solid #999;
+  background-color: white;
+  border-left: 1px solid #efefef !important;
   border-right: 1px solid #999;
-  border-top: 1px solid #999;
+  border-top: 1px solid #efefef !important;
   padding: 3px;
   padding-bottom: 10px;
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
   display: none;
+  margin-top:10px;
+  color:white;
 }
 #chattext {
   background-color: white;
@@ -571,6 +572,8 @@ table#otheruserstable {
   padding: 3px;
   -ms-overflow-x: hidden;
   overflow-x: hidden;
+  background:none;
+  color:black;
 }
 .chatloadmessages
 {
@@ -632,8 +635,8 @@ table#otheruserstable {
 }
 #titlebar {
   line-height: 16px;
-  font-weight: bold;
-  color: #555;
+  font-weight: normal;
+  color:#999999;
   position: relative;
   bottom: 2px;
 }
@@ -661,12 +664,12 @@ table#otheruserstable {
 }
 .time {
   float: right;
-  color: #333;
-  font-style: italic;
+  color: #555;
   font-size: 10px;
   margin-left: 3px;
   margin-right: 3px;
   margin-top: 2px;
+  background:none;
 }
 #exportColumn{
   margin-top:20px;
@@ -856,20 +859,13 @@ input[type=checkbox] {
   font-size: 12px;
   width: 80%;
   max-width: 500px;
-  padding: 10px;
-  border-radius: 0 0 6px 6px;
-  border: 1px solid #ccc;
+  padding: 15px;
+  border-radius: 0;
+  border: 2px solid black;
   border-top: none;
-  background: #f7f7f7;
-  background: -webkit-linear-gradient(#F7F7F7, #EEE);
-  background: -moz-linear-gradient(#F7F7F7, #EEE);
-  background: -ms-linear-gradient(#F7F7F7, #EEE);
-  background: -o-linear-gradient(#F7F7F7, #EEE);
-  background: linear-gradient(#F7F7F7, #EEE);
-  -webkit-box-shadow: 0 0 8px #888;
-  -moz-box-shadow: 0 0 8px #888;
+  background: white;
   box-shadow: 0 2px 4px #ddd;
-  color: #222;
+  color: black;
 }
 .popup input[type=text] {
   width: 100%;
@@ -927,7 +923,7 @@ input[type=checkbox] {
   z-index: 500;
 }
 .stickyChat {
-  background-color: #f1f1f1 !important;
+  background-color: white !important;
   right: 0px !important;
   top: 37px;
   -webkit-border-radius: 0px !important;
@@ -935,7 +931,7 @@ input[type=checkbox] {
   border-radius: 0px !important;
   height: auto !important;
   border: none !important;
-  border-left: 1px solid #ccc !important;
+  border-left: 1px solid #efefef !important;
   width: 185px !important;
 }
 .chatAndUsers{

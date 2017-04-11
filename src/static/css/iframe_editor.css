@@ -92,9 +92,9 @@ body.doesWrap:not(.noprewrap) > div{
 }
 
 .sidedivdelayed { /* class set after sizes are set */
-  background-color: #eee;
+  background-color: white;
   color: #888 !important;
-  border-right: 1px solid #ccc;
+  border-right: 1px solid #efefef;
 }
 .sidedivhidden {
   display: none;
