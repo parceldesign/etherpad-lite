@@ -1,6 +1,8 @@
 # A really-real time collaborative word processor for the web
 ![alt text](http://i.imgur.com/zYrGkg3.gif "Etherpad in action on PrimaryPad")
 
+<strong>Please commit to 'develop' branch</strong>
+
 # About
 Etherpad is a really-real time collaborative editor maintained by the Etherpad Community.
 
