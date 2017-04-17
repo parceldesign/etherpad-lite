@@ -28,9 +28,10 @@ iframe {
   line-height:24px;
   padding-top:16px !important;
   width: 50%;
-  margin: 0 auto;
+  margin: 10px auto 0; 
   min-width: 500px;
   max-width: 700px;
+  border-top: 7px solid rgb(206,	234,	228);
 }
 #users {
   background: white;
@@ -113,8 +114,8 @@ a img {
   box-shadow: 0 0 8px rgba(0,0,0,.1) inset;
 }
 .toolbar ul li a {
-  background: #fff;
-  border: 1px solid #efefef;
+  background: rgb(224,	242,	238);
+  border:none;
   border-radius: 0px;
   color: #ccc;
   cursor: pointer;
@@ -149,16 +150,16 @@ a img {
 }
 
 .toolbar ul li a.grouped-left {
-  border-radius: 3px 0 0 3px;
+  border-radius: 0;
 }
 .toolbar ul li a.grouped-middle {
   border-radius: 0;
-  margin-left: -2px;
+  margin-left: 0;
   border-left: 0;
 }
 .toolbar ul li a.grouped-right {
-  border-radius: 0 3px 3px 0;
-  margin-left: -2px;
+  border-radius: 0;
+  margin-left: 0;
   border-left: 0;
 }
 .toolbar ul li a.selected {
@@ -547,10 +548,8 @@ table#otheruserstable {
   width: 180px;
   height: 200px;
   z-index: 400;
-  background-color: white;
-  border-left: 1px solid #efefef !important;
-  border-right: 1px solid #999;
-  border-top: 1px solid #efefef !important;
+  background-color:rgb(224,	242,	238);
+  border:none;
   padding: 3px;
   padding-bottom: 10px;
   border-top-left-radius: 5px;
@@ -560,8 +559,6 @@ table#otheruserstable {
   color:white;
 }
 #chattext {
-  background-color: white;
-  border: 1px solid white;
   -ms-overflow-y: scroll;
   overflow-y: scroll;
   font-size: 12px;
@@ -569,7 +566,7 @@ table#otheruserstable {
   right: 0px;
   left: 0px;
   top: 25px;
-  bottom: 25px;
+  bottom: 49px;
   z-index: 1002;
 }
 #chattext p {
@@ -596,11 +593,11 @@ table#otheruserstable {
   display: none;
 }
 #chatinputbox {
-  padding: 3px 2px;
+  padding: 0;
   position: absolute;
   bottom: 0px;
   right: 0px;
-  left: 3px;
+  left: 0;
 }
 #chatlabel {
   font-size: 13px;
@@ -611,9 +608,10 @@ table#otheruserstable {
   vertical-align: middle;
 }
 #chatinput {
-  border: 1px solid #BBBBBB;
+  border:3px solid rgb(206,	234,	228	);
+  flex: 1;
+  padding: 15px;
   width: 100%;
-  float: right;
 }
 #chaticon {
   z-index: 400;
@@ -648,6 +646,7 @@ table#otheruserstable {
   font-size: 13px;
   margin: 4px 0 0 4px;
   position: absolute;
+  display: none;
 }
 #titlesticky{
   font-size: 10px;
@@ -669,11 +668,16 @@ table#otheruserstable {
 .time {
   float: right;
   color: #555;
-  font-size: 10px;
-  margin-left: 3px;
-  margin-right: 3px;
-  margin-top: 2px;
-  background:none;
+  font-size: 11px;
+  background:none !important;
+
+  position: absolute;
+  left: 0;
+  bottom: 12px;
+  margin: 0;
+  padding: 0;
+  opacity: 0.5;
+  color: black;
 }
 #exportColumn{
   margin-top:20px;
@@ -756,8 +760,8 @@ table#otheruserstable {
   opacity: .8;
 }
 .buttonicon {
-  width: 16px;
-  height: 16px;
+  width: 24px;
+  height: 24px;
   display: inline-block;
   vertical-align: middle;
   border: none;
@@ -767,7 +771,7 @@ table#otheruserstable {
   font-size: 15px;
   font-style: normal;
   font-weight: normal;
-  color: #666;
+  color: black;
   cursor: pointer;
 }
 
@@ -850,7 +854,15 @@ table#otheruserstable {
   direction: RTL
 }
 #chattext p {
-  word-wrap: break-word
+  word-wrap: break-word;
+  padding: 0 0 30px;
+  border-bottom: 2px solid black;
+  margin: 0 20px;
+  position: relative;
+}
+#chattext p b {
+  padding: 0 0 5px;
+  display: inline-block;
 }
 /* fix for misaligned checkboxes */
 input[type=checkbox] {
@@ -927,7 +939,6 @@ input[type=checkbox] {
   z-index: 500;
 }
 .stickyChat {
-  background-color: white !important;
   right: 0px !important;
   top: 37px;
   -webkit-border-radius: 0px !important;
@@ -935,7 +946,6 @@ input[type=checkbox] {
   border-radius: 0px !important;
   height: auto !important;
   border: none !important;
-  border-left: 1px solid #efefef !important;
   width: 185px !important;
 }
 .chatAndUsers{
