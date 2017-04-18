@@ -32,7 +32,7 @@ body.grayedout { background-color: #eee !important }
 
 #innerdocbody {
   font-size: 18px; /* overridden by body.style */
-  font-family:Arial, sans-serif; /* overridden by body.style */
+  font-family:serif; /* overridden by body.style */
   line-height: 24px; /* overridden by body.style */
   background-color: white;
   color: black;
@@ -75,7 +75,7 @@ body.doesWrap:not(.noprewrap) > div{
 
 #sidediv {
   font-size: 11px;
-  font-family: monospace;
+  font-family: sans-serif;
   line-height: 16px; /* overridden by sideDiv.style */
   padding-top: 8px; /* EDIT_BODY_PADDING_TOP */
   padding-right: 3px; /* LINE_NUMBER_PADDING_RIGHT - 1 */
@@ -84,7 +84,7 @@ body.doesWrap:not(.noprewrap) > div{
   top: 0;
   left: 0;
   cursor: default;
-  color: white;
+  color: black !important;
 }
 
 #sidedivinner {
@@ -93,8 +93,7 @@ body.doesWrap:not(.noprewrap) > div{
 
 .sidedivdelayed { /* class set after sizes are set */
   background-color: white;
-  color: #888 !important;
-  border-right: 1px solid #efefef;
+  color: black !important;
 }
 .sidedivhidden {
   display: none;

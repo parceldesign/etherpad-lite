@@ -31,7 +31,7 @@ iframe {
   margin: 10px auto 0; 
   min-width: 500px;
   max-width: 700px;
-  border-top: 7px solid rgb(206,	234,	228);
+  /*border-top: 7px solid rgb(206,	234,	228);*/
 }
 #users {
   background: white;
@@ -186,6 +186,14 @@ a img {
 
 .toolbar ul.menu_right {
   right:0px;
+}
+.toolbar ul.menu_right li:nth-child(1),
+.toolbar ul.menu_right li:nth-child(4),
+.toolbar ul.menu_right li:nth-child(5) {
+  display: none;
+}
+.toolbar ul.menu_right li a {
+  background:white;
 }
 
 li[data-key=showusers] > a {
@@ -545,7 +553,7 @@ table#otheruserstable {
   position: absolute;
   bottom: 0px;
   right: 20px;
-  width: 180px;
+  width: 185px;
   height: 200px;
   z-index: 400;
   background-color:rgb(224,	242,	238);
@@ -598,6 +606,7 @@ table#otheruserstable {
   bottom: 0px;
   right: 0px;
   left: 0;
+  display: flex;
 }
 #chatlabel {
   font-size: 13px;
@@ -608,31 +617,36 @@ table#otheruserstable {
   vertical-align: middle;
 }
 #chatinput {
-  border:3px solid rgb(206,	234,	228	);
+  border:4px solid rgb(206,	234,	228	);
   flex: 1;
   padding: 15px;
-  width: 100%;
+  width: 99%;
+}
+#chatinput:active, #chatinput:focus {
+  outline:none;
 }
 #chaticon {
   z-index: 400;
   position: fixed;
   bottom: 0px;
   right: 20px;
-  padding: 5px;
-  border-left: 1px solid #999;
-  border-right: 1px solid #999;
-  border-top: 1px solid #999;
-  border-top-left-radius: 5px;
-  border-top-right-radius: 5px;
+  padding: 5px 15px;
+  border:4px solid black;
   background-color: #fff;
+  color:black;
   cursor: pointer;
+}
+#chaticon .buttonicon {
+  display: none;
 }
 #chaticon a {
   text-decoration: none
+  color:black;
 }
 #chatcounter {
-  color: #777;
+  color: #dc422a;
   font-size: 10px;
+  font-weight: bold;
   vertical-align: middle;
 }
 #titlebar {
@@ -877,11 +891,10 @@ input[type=checkbox] {
   max-width: 500px;
   padding: 15px;
   border-radius: 0;
-  border: 2px solid black;
-  border-top: none;
   background: white;
-  box-shadow: 0 2px 4px #ddd;
+  box-shadow: 0 2px 28px rgba(0,0,0,.2);
   color: black;
+  border: 14px solid #e0f2ee;
 }
 .popup input[type=text] {
   width: 100%;
@@ -904,12 +917,14 @@ input[type=checkbox] {
   text-decoration: none
 }
 .popup h1 {
-  color: #555;
-  font-size: 18px
+  color: black;
+  font-size: 18px;
+  margin: 0 0 10px;
 }
 .popup h2 {
-  color: #777;
-  font-size: 15px
+  color:black;
+  font-size: 15px;
+  margin: 0 0 13px;
 }
 .popup p {
   margin: 5px 0
