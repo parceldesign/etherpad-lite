@@ -619,7 +619,7 @@ table#otheruserstable {
 #chatinput {
   border:4px solid rgb(206,	234,	228	);
   flex: 1;
-  padding: 15px;
+  padding: 15px 2%;
   width: 99%;
 }
 #chatinput:active, #chatinput:focus {
